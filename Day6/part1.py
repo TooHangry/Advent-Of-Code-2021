@@ -10,7 +10,7 @@ def get_latern_fish():
 def run():
     # Fish list is essentially day 0
     fish_list = get_latern_fish()
-    DAYS = 80
+    DAYS = 256
 
     # Each day, decrement the list, adding an '8' onto the end if a fish dies (0)
     for current_day in range(1, DAYS + 1):
@@ -24,7 +24,7 @@ def run():
                 to_add.append(8)
 
         fish_list = fish_list + to_add
-        print(','.join([str(f) for f in fish_list]))
+        # print(','.join([str(f) for f in fish_list]))
         print(len(fish_list))
 
 
